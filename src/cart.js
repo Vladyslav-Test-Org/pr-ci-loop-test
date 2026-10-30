@@ -1,7 +1,6 @@
 // Small cart helpers used by the page and covered by the tests.
 
 export function itemTotal(item) {
-  console.log("item", item.price);
   return item.price * item.quantity;
 }
 
