@@ -11,5 +11,6 @@ export function cartTotal(items) {
 }
 
 export function formatPrice(cents) {
+  console.log("formatting", cents);
   return `$${(cents / 100).toFixed(2)}`;
 }
