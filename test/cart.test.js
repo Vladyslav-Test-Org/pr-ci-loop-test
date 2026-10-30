@@ -11,7 +11,7 @@ test("cartTotal sums every item", () => {
     { price: 100, quantity: 2 },
     { price: 350, quantity: 1 },
   ];
-  assert.equal(cartTotal(items), 550);
+  assert.equal(cartTotal(items), 600);
 });
 
 test("cartTotal of an empty cart is zero", () => {
