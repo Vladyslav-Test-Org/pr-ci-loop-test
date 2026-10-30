@@ -5,7 +5,9 @@ export function itemTotal(item) {
 }
 
 export function cartTotal(items) {
-  return items.reduce((sum, item) => sum + itemTotal(item), 0);
+  const total = items.reduce((sum, item) => sum + itemTotal(item), 0);
+  console.log("cart total", total);
+  return total;
 }
 
 export function formatPrice(cents) {
