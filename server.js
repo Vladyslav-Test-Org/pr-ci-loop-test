@@ -20,6 +20,6 @@ createServer((req, res) => {
   res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
   res.end(`<!doctype html><html><head><meta charset="utf-8"><title>Cart</title>
 <link rel="stylesheet" href="/style.css"></head><body>
-<h1>Your cart</h1><ul>${rows}</ul><p class="total">Total: ${formatPrice(cartTotal(items))}</p>
+<h1>Shopping cart</h1><ul>${rows}</ul><p class="total">Total: ${formatPrice(cartTotal(items))}</p>
 </body></html>`);
 }).listen(PORT, () => console.log(`Cart running on http://localhost:${PORT}`));
